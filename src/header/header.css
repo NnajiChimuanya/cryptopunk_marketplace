@@ -5,6 +5,10 @@
   justify-content: space-between;
 }
 
+.header > div {
+  margin: 10px;
+}
+
 .header-logo-image {
   width: 200px;
   object-fit: contain;
@@ -27,6 +31,7 @@
 
 .header-searchbar-input {
   background: none;
+  padding-right: 10px;
 }
 
 .header-searchbar-input > input {
@@ -59,6 +64,12 @@
 }
 
 .light-mode > .MuiSvgIcon-root {
-  font-size: 30px;
+  font-size: 25px;
   background: none;
+}
+
+.login-button {
+  background: cyan;
+  color: black;
+  padding: 5px;
 }

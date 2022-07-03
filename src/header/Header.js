@@ -29,8 +29,9 @@ const Header = () => {
         <div className="light-mode">
           <LightModeIcon />
         </div>
-        <button></button>
       </div>
+
+      <div className="login-button">Get in</div>
     </header>
   );
 };
