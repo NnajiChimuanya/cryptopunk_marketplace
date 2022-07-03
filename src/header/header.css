@@ -71,5 +71,6 @@
 .login-button {
   background: cyan;
   color: black;
-  padding: 5px;
+  padding: 10px 20px;
+  border-radius: 50px;
 }
