@@ -14,6 +14,7 @@ const PunkList = () => {
         "https://testnets-api.opensea.io/assets?asset_contract_address=0xE3320a32f3c5959845C6A39b3B0d29D869A8F968&order_direction=asc"
       );
       setPunkListData(data.data.assets);
+      console.log(data.data.assets);
     };
 
     getNfts();
@@ -22,11 +23,12 @@ const PunkList = () => {
   return (
     <div className="punk-list">
       {punkListData.map((punk) => {
-        const { token_id, image_original_url, name, trait } = punk;
+        const { token_id, image_original_url, name, traits } = punk;
         return (
           <CollectionCard
+            key={token_id}
             image={image_original_url}
-            price="5"
+            price={traits[0].value}
             id={token_id}
             trait="55"
             name={name}
