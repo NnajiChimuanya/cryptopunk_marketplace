@@ -13,7 +13,7 @@ const PunkList = () => {
       let data = await axios.get(
         "https://testnets-api.opensea.io/assets?asset_contract_address=0xE3320a32f3c5959845C6A39b3B0d29D869A8F968&order_direction=asc"
       );
-      console.log(data.data.assets);
+      setPunkListData(data.data.assets);
     };
 
     getNfts();
@@ -21,13 +21,18 @@ const PunkList = () => {
 
   return (
     <div className="punk-list">
-      <CollectionCard
-        image={im}
-        price="5"
-        id="4"
-        trait="55"
-        name="Blue hat punk"
-      />
+      {punkListData.map((punk) => {
+        const { token_id, image_original_url, name, trait } = punk;
+        return (
+          <CollectionCard
+            image={image_original_url}
+            price="5"
+            id={token_id}
+            trait="55"
+            name={name}
+          />
+        );
+      })}
     </div>
   );
 };
