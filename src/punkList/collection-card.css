@@ -1,0 +1,49 @@
+.collection-card {
+  background-color: #1c1c1e;
+  border-radius: 20px;
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.collection-card > img {
+  width: 100%;
+}
+
+.collection-card-details {
+  padding: 20px;
+  background: none;
+}
+
+.collection-card-details > .name {
+  background: none;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.name > p {
+  background: none;
+}
+
+.name > .id {
+  color: #a1a5b0;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  background: none;
+}
+
+.price-container > img {
+  height: 23px;
+  width: 15px;
+  background: none;
+}
+
+.price {
+  margin: 5px;
+  background: none;
+  font-weight: 800;
+}

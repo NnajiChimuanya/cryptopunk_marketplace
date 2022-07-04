@@ -45,6 +45,7 @@
 
 .header-items {
   display: flex;
+  cursor: pointer;
 }
 
 .header-items > p {
