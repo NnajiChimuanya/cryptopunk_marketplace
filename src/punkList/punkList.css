@@ -1,3 +1,13 @@
 .punk-list {
   color: white;
+  display: flex;
+  cursor: pointer;
+  overflow: scroll;
+  margin-top: 20px;
+  padding: 20px;
+  border-bottom: 1px solid white;
+}
+
+.punk-list::-webkit-scrollbar {
+  display: none;
 }
