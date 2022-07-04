@@ -8,7 +8,7 @@ const CollectionCard = ({ image, name, id, trait, price }) => {
       <div className="collection-card-details">
         <div className="name">
           <p>{name}</p>
-          <p className="id">{id}</p>
+          <p className="id">-#{id}</p>
         </div>
 
         <div className="price-container">
