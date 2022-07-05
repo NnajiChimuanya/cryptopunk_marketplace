@@ -25,7 +25,7 @@ const PunkList = () => {
   };
 
   return (
-    <div className="punk-list">
+    <div unselectable="on" className="punk-list">
       {punkListData.map((punk) => {
         const { id, token_id, image_original_url, name, traits } = punk;
         return (
