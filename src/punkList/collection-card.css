@@ -7,6 +7,13 @@
   margin: 10px;
 }
 
+.collection-card:hover,
+.collection-card:focus,
+.collection-card:active {
+  transform: scale(0.75);
+  transition: 200ms;
+}
+
 .collection-card > img {
   width: 100%;
 }
