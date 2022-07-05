@@ -75,3 +75,13 @@
   padding: 10px 20px;
   border-radius: 50px;
 }
+
+@media screen and (max-width: 650px) {
+  .header-logo {
+    display: none;
+  }
+
+  .header-items {
+    display: none;
+  }
+}

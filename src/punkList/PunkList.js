@@ -14,23 +14,28 @@ const PunkList = () => {
         "https://cryptopunk-marketplace-backend.herokuapp.com/getNfts"
       );
       setPunkListData(data.data);
+      console.log(data.data);
     };
 
     getNfts();
   }, []);
 
+  const handleClick = (x) => {
+    console.log(x);
+  };
+
   return (
     <div className="punk-list">
       {punkListData.map((punk) => {
-        const { token_id, image_original_url, name, traits } = punk;
+        const { id, token_id, image_original_url, name, traits } = punk;
         return (
-          <div>
+          <div key={id} onClick={() => handleClick(token_id)}>
             <CollectionCard
-              key={token_id}
+              onClick={handleClick}
+              key={id}
               image={image_original_url}
               price={traits[0].value}
               id={token_id}
-              trait="55"
               name={name}
             />
           </div>
