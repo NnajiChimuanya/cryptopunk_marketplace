@@ -13,9 +13,7 @@ const PunkList = () => {
       let data = await axios.get(
         "https://cryptopunk-marketplace-backend.herokuapp.com/getNfts"
       );
-      let dataArr = Array.from(data);
-      setPunkListData(dataArr);
-      console.log(data);
+      setPunkListData(data.data);
     };
 
     getNfts();
