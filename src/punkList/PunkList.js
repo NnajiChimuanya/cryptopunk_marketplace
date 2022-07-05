@@ -8,6 +8,7 @@ import axios from "axios";
 const PunkList = () => {
   const [punkListData, setPunkListData] = useState([]);
   const [selectedPunk, setSelectedPunk] = useState(0);
+  const [activePunk, setActivePunk] = useState(0);
 
   useEffect(() => {
     const getNfts = async () => {
@@ -21,13 +22,25 @@ const PunkList = () => {
     getNfts();
   }, []);
 
+  useEffect(() => {
+    setActivePunk(punkListData[selectedPunk]);
+  }, [selectedPunk, punkListData]);
+
   const handleClick = (x) => {
     setSelectedPunk(x);
   };
 
+  console.log(activePunk);
+
   return (
     <div>
-      <div className="main"></div>
+      {punkListData.length > 0 && (
+        <div className="main">
+          <div className="punk-highligt">
+            <img src={activePunk?.image_original_url} alt="" />
+          </div>
+        </div>
+      )}
 
       <div unselectable="on" className="punk-list">
         {punkListData.map((punk) => {

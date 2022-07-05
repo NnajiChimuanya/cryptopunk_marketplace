@@ -12,3 +12,7 @@
 .punk-list::-webkit-scrollbar {
   display: none;
 }
+
+.punk-highlight > img {
+  height: 200px;
+}
