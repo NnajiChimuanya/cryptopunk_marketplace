@@ -7,6 +7,7 @@ import axios from "axios";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import EmailIcon from "@mui/icons-material/Email";
+import { ExternalLink } from "react-external-link";
 
 const PunkList = () => {
   const [punkListData, setPunkListData] = useState([]);
@@ -62,15 +63,27 @@ const PunkList = () => {
 
               <div className="social-media">
                 <div className="icon">
-                  <InstagramIcon />
+                  <ExternalLink href="https://www.instagram.com/nnaji_chimuanya/">
+                    <span>
+                      <InstagramIcon />
+                    </span>
+                  </ExternalLink>
                 </div>
 
                 <div className="icon">
-                  <TwitterIcon />
+                  <ExternalLink href="https://twitter.com/nnaji_chimuanya">
+                    <span>
+                      <TwitterIcon />
+                    </span>
+                  </ExternalLink>
                 </div>
 
                 <div className="icon">
-                  <EmailIcon />
+                  <ExternalLink href="https://nnajichimuanya50@gmail.com">
+                    <span>
+                      <EmailIcon />
+                    </span>
+                  </ExternalLink>
                 </div>
               </div>
             </div>
