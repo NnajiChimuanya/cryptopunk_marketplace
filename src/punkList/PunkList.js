@@ -42,7 +42,7 @@ const PunkList = () => {
           </div>
           <div className="details">
             <div className="details-punk">
-              <p className="description"> {activePunk?.description}</p>
+              <h2 className="description"> {activePunk?.name}</h2>
               <span> -#{activePunk?.id}</span>
             </div>
             <div className="details-user">
@@ -56,19 +56,20 @@ const PunkList = () => {
                 </div>
                 <div>
                   <p>{activePunk?.owner.address}</p>
+                  <p>{activePunk?.owner.user.username}</p>
                 </div>
               </div>
 
               <div className="social-media">
-                <div>
+                <div className="icon">
                   <InstagramIcon />
                 </div>
 
-                <div>
+                <div className="icon">
                   <TwitterIcon />
                 </div>
 
-                <div>
+                <div className="icon">
                   <EmailIcon />
                 </div>
               </div>

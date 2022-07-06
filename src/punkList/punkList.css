@@ -18,14 +18,22 @@
 }
 
 .punk-highlight > img {
-  height: 200px;
   flex: 0.25;
+  height: 20vw;
+  margin: 0 20px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  width: auto;
 }
 
 .details {
   display: grid;
-  gap: 100px;
+  gap: 50px;
   flex: 0.75;
+}
+
+.details-punk > .description {
+  margin-bottom: 10px;
+  font-size: 48px;
 }
 
 .address {
@@ -46,4 +54,10 @@
 
 .social-media {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-media > .icon {
+  margin: 5px;
 }
