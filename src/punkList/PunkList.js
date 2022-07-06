@@ -47,11 +47,31 @@ const PunkList = () => {
             </div>
             <div className="details-user">
               <div className="address">
-                <img src={activePunk?.owner.profile_img_url} alt="" />
-                <p>{activePunk?.owner.address}</p>
+                <div>
+                  <img
+                    className="owner-image"
+                    src={activePunk?.owner.profile_img_url}
+                    alt=""
+                  />
+                </div>
+                <div>
+                  <p>{activePunk?.owner.address}</p>
+                </div>
               </div>
 
-              <div className="social-media"></div>
+              <div className="social-media">
+                <div>
+                  <InstagramIcon />
+                </div>
+
+                <div>
+                  <TwitterIcon />
+                </div>
+
+                <div>
+                  <EmailIcon />
+                </div>
+              </div>
             </div>
           </div>
         </div>
