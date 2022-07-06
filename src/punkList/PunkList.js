@@ -4,6 +4,9 @@ import im from "../1.jpg";
 import CollectionCard from "./CollectionCard";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import EmailIcon from "@mui/icons-material/Email";
 
 const PunkList = () => {
   const [punkListData, setPunkListData] = useState([]);
@@ -30,8 +33,6 @@ const PunkList = () => {
     setSelectedPunk(x);
   };
 
-  console.log(activePunk);
-
   return (
     <div>
       {punkListData.length > 0 && (
@@ -40,8 +41,18 @@ const PunkList = () => {
             <img src={activePunk?.image_original_url} alt="" />
           </div>
           <div className="details">
-            <div className="details-punk"></div>
-            <div className=""></div>
+            <div className="details-punk">
+              <p className="description"> {activePunk?.description}</p>
+              <span> -#{activePunk?.id}</span>
+            </div>
+            <div className="details-user">
+              <div className="address">
+                <img src={activePunk?.owner.profile_img_url} alt="" />
+                <p>{activePunk?.owner.address}</p>
+              </div>
+
+              <div className="social-media"></div>
+            </div>
           </div>
         </div>
       )}

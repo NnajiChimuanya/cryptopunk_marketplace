@@ -13,6 +13,15 @@
   display: none;
 }
 
+.main {
+  display: flex;
+}
+
 .punk-highlight > img {
   height: 200px;
+}
+
+.details {
+  display: grid;
+  gap: 40px;
 }
