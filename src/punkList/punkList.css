@@ -58,12 +58,12 @@
   margin-left: 5px;
 }
 
-.owner-details > .address {
+.owner-details > p {
   font-size: 15px;
   text-decoration: none;
 }
 
-.owner-details > .username {
+.owner-details > p {
   font-style: italic;
   text-decoration: none;
 }
@@ -118,7 +118,7 @@
     text-decoration: none;
   }
 
-  .owner-details > .username {
+  .owner-details > p {
     font-size: 8px;
     font-style: italic;
     text-decoration: none;
@@ -138,9 +138,5 @@
 
   .social-media > .icon {
     margin: 5px;
-  }
-
-  .main-icon {
-    font-size: 10px;
   }
 }
