@@ -85,9 +85,64 @@
 .social-media {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .social-media > .icon {
   margin: 5px;
+}
+
+@media screen and (max-width: 850px) {
+  .details {
+    gap: 10px;
+  }
+
+  .details-punk > .description {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+
+  .details-punk > .id {
+    color: grey;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .owner-image {
+    height: 20px;
+    border-radius: 50%;
+  }
+
+  .owner-details > .address {
+    font-size: 10px;
+    text-decoration: none;
+  }
+
+  .owner-details > .username {
+    font-size: 8px;
+    font-style: italic;
+    text-decoration: none;
+  }
+
+  .owner-details > .address:hover {
+    transform: scale(1.01);
+  }
+
+  .details-user {
+    display: grid;
+  }
+
+  .details-user > div > p {
+    font-size: 10px;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .social-media > .icon {
+    margin: 5px;
+  }
 }
