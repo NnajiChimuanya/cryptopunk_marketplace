@@ -44,10 +44,10 @@ const PunkList = () => {
           <div className="details">
             <div className="details-punk">
               <h2 className="description"> {activePunk?.name}</h2>
-              <span> -#{activePunk?.id}</span>
+              <span className="id"> -#{activePunk?.id}</span>
             </div>
             <div className="details-user">
-              <div className="address">
+              <div className="owner">
                 <div>
                   <img
                     className="owner-image"
@@ -55,9 +55,17 @@ const PunkList = () => {
                     alt=""
                   />
                 </div>
-                <div>
-                  <p>{activePunk?.owner.address}</p>
-                  <p>{activePunk?.owner.user.username}</p>
+                <div className="owner-details">
+                  <p className="address">
+                    <ExternalLink href="https://testnets.opensea.io/nnaji_chimuanya">
+                      {activePunk?.owner.address}
+                    </ExternalLink>
+                  </p>
+                  <p className="address">
+                    <ExternalLink href="https://testnets.opensea.io/nnaji_chimuanya">
+                      {activePunk?.owner.user.username}
+                    </ExternalLink>
+                  </p>
                 </div>
               </div>
 

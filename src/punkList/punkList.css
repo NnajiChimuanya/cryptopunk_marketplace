@@ -38,7 +38,13 @@
   width: 50vw;
 }
 
-.address {
+.details-punk > .id {
+  color: grey;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.owner {
   display: flex;
   align-items: center;
 }
@@ -48,10 +54,32 @@
   border-radius: 50%;
 }
 
+.owner-details {
+  margin-left: 5px;
+}
+
+.owner-details > .address {
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.owner-details > .username {
+  font-style: italic;
+  text-decoration: none;
+}
+
+.owner-details > .address:hover {
+  transform: scale(1.01);
+}
+
 .details-user {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.details-user > div > p {
+  font-size: 10px;
 }
 
 .social-media {
