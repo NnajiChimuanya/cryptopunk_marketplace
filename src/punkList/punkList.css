@@ -136,13 +136,11 @@
     font-size: 10px;
   }
 
-  .social-media {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-
   .social-media > .icon {
     margin: 5px;
+  }
+
+  .main-icon {
+    font-size: 10px;
   }
 }

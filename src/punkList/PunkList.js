@@ -73,7 +73,7 @@ const PunkList = () => {
                 <div className="icon">
                   <ExternalLink href="https://www.instagram.com/nnaji_chimuanya/">
                     <span>
-                      <InstagramIcon />
+                      <InstagramIcon className="main-icon" />
                     </span>
                   </ExternalLink>
                 </div>
@@ -81,7 +81,7 @@ const PunkList = () => {
                 <div className="icon">
                   <ExternalLink href="https://twitter.com/nnaji_chimuanya">
                     <span>
-                      <TwitterIcon />
+                      <TwitterIcon className="main-icon" />
                     </span>
                   </ExternalLink>
                 </div>
@@ -89,7 +89,7 @@ const PunkList = () => {
                 <div className="icon">
                   <ExternalLink href="https://nnajichimuanya50@gmail.com">
                     <span>
-                      <EmailIcon />
+                      <EmailIcon className="main-icon" />
                     </span>
                   </ExternalLink>
                 </div>
